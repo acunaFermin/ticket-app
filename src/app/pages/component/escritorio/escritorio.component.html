@@ -1,0 +1,14 @@
+<h1>Escritorio {{ escritorio }}</h1>
+<h4>
+  <span *ngIf="clienteStatus == false"
+    >Atendiendo a <small>{{ cliente.ticket }}</small></span
+  >
+  <span *ngIf="clienteStatus == true"
+    ><small>Ya no hay clientes esperando</small></span
+  >
+</h4>
+<hr />
+
+<button (click)="atender()" class="btn btn-primary btn-lg">
+  Atender siguiente ticket
+</button>

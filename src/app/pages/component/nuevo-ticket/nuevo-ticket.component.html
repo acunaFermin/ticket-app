@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <td>
+      <span *ngIf="ticket == 0" id="lblNuevoTicket"> Cargando... </span>
+      <span *ngIf="ticket > 0" id="lblNuevoTicket"> {{ ticket }} </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="generarTicket()" class="btn btn-secondary btn-lg">
+        Generar nuevo ticket
+      </button>
+    </td>
+  </tr>
+</table>
