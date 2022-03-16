@@ -11,7 +11,7 @@ export class WebsocketService extends Socket {
 
 	constructor() {
 		super({
-			url: "localhost:5500/",
+			url: "https://tickets.acuna-fermin.dev/",
 		});
 		this.checkStatus();
 		this.listen("cliente-conectado");
